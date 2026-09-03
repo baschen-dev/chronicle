@@ -8,7 +8,7 @@ Nothing in the app knows what a *race*, a *due date* or a *quest* is. An Earthda
 table and a work log with projects and tasks are three vocabularies, and the app holds all three
 because it holds none of them.
 
-Website: <https://baschenis.chronicle.dev.baschen.is>
+Website: <https://chronicle.dev.baschen.is>
 
 ## This repository
 
@@ -16,8 +16,8 @@ The website and the **public issue tracker**. The app's source is not here.
 
 - **Something is broken, or missing** — [open an issue](https://github.com/abaschen/chronicle/issues).
   Say which version you are on (Settings shows it) and what you expected instead.
-- **Privacy** — [English](https://baschenis.chronicle.dev.baschen.is/privacy.html) ·
-  [Français](https://baschenis.chronicle.dev.baschen.is/confidentialite.html)
+- **Privacy** — [English](https://chronicle.dev.baschen.is/privacy.html) ·
+  [Français](https://chronicle.dev.baschen.is/confidentialite.html)
 
 ## The site
 
