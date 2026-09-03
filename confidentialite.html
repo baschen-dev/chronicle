@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chronicle — Politique de confidentialité</title>
+<style>
+  :root { color-scheme: light dark; --ink:#1b1b1f; --dim:#5a5c66; --bg:#fdfbf7; --rule:#e3e1ec; --link:#4a5ba9; }
+  @media (prefers-color-scheme: dark) { :root { --ink:#e4e1e9; --dim:#a9a8b3; --bg:#131317; --rule:#33333a; --link:#b9c3ff; } }
+  body { margin:0 auto; padding:2.5rem 1.25rem 5rem; max-width:44rem; background:var(--bg); color:var(--ink);
+         font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; }
+  h1 { font-size:1.9rem; margin:0 0 .25rem; letter-spacing:-.02em; }
+  h2 { font-size:1.15rem; margin:2.25rem 0 .5rem; }
+  .sub { color:var(--dim); margin:0 0 2rem; }
+  a { color:var(--link); }
+  ul { padding-left:1.25rem; }
+  li { margin:.3rem 0; }
+  code { background:var(--rule); padding:.1rem .3rem; border-radius:.2rem; font-size:.9em; }
+  .lang { margin-bottom:2rem; font-size:.9rem; }
+  hr { border:0; border-top:1px solid var(--rule); margin:2.5rem 0; }
+  .note { color:var(--dim); font-size:.9rem; }
+</style>
+</head>
+<body>
+
+<p class="lang"><a href="/">← Chronicle</a> · <strong>Français</strong> · <a href="/privacy.html">English</a></p>
+
+<h1>Chronicle — Politique de confidentialité</h1>
+<p class="sub">Mise à jour le 1<sup>er</sup> septembre 2026</p>
+
+<p>Chronicle est une application de journal. Vous écrivez des notes, et vous définissez vous-même de
+quels types de choses le journal garde la trace. Cette page explique ce qu'il advient de ce que vous
+écrivez.</p>
+
+<h2>En bref</h2>
+<ul>
+  <li>Chronicle fonctionne entièrement sans compte. Si vous ne vous connectez jamais, rien de ce que vous écrivez ne quitte votre appareil, hors sauvegarde Android (voir plus bas).</li>
+  <li>Aucune statistique d'usage, aucune publicité, aucun pistage, aucun profilage. Rien de ce que vous écrivez n'est lu, exploité ou partagé.</li>
+  <li>Si vous vous connectez, vos journaux sont copiés dans Google Cloud Firestore pour que vous puissiez les retrouver sur un autre appareil. Vous seul pouvez lire cette copie.</li>
+  <li>Vous pouvez supprimer la copie en ligne et votre compte depuis l'application, à tout moment.</li>
+</ul>
+
+<h2>Ce qui est stocké sur votre appareil</h2>
+<p>Tout ce que vous écrivez — journaux, modèle de données, entrées du codex, notes et chapitres — est
+enregistré dans une base de données sur l'appareil, et nulle part ailleurs, sauf si vous vous
+connectez.</p>
+<p>La <strong>sauvegarde automatique</strong> d'Android peut inclure cette base dans la sauvegarde
+qu'Android effectue vers votre compte Google, et la restaurer lors d'une réinstallation. Cette
+sauvegarde est opérée par Google et non par Chronicle : elle est chiffrée, Chronicle ne peut pas la
+lire, et vous pouvez la désactiver dans les réglages de votre appareil, section Sauvegarde.</p>
+
+<h2>Ce qui est stocké en ligne, si vous vous connectez</h2>
+<p>La connexion est facultative. Lorsque vous vous connectez :</p>
+<ul>
+  <li><strong>Ce qui est envoyé :</strong> le contenu de vos journaux — leur modèle, les entrées du codex, les notes, les chapitres et leurs dates de modification.</li>
+  <li><strong>Ce qui vous identifie :</strong> l'identifiant Firebase créé pour votre compte Google, ainsi que l'adresse e-mail et le nom d'affichage que Google renvoie lors de la connexion.</li>
+  <li><strong>Où c'est conservé :</strong> Google Cloud Firestore, dans la multirégion européenne de Google (<code>eur3</code>).</li>
+  <li><strong>Qui peut le lire :</strong> vous seul. Les règles de la base n'autorisent chaque utilisateur connecté qu'à ses propres données, et à rien d'autre.</li>
+</ul>
+<p>Google agit comme hébergeur (sous-traitant) pour ce stockage. Chronicle n'envoie vos données à
+personne d'autre. L'application ne contient aucun autre service tiers.</p>
+
+<h2>Achats</h2>
+<p>Chronicle propose un achat intégré facultatif, qui lève la limite d'un journal de la version
+gratuite. La transaction est entièrement gérée par Google Play. Chronicle ne voit jamais de moyen de
+paiement, de numéro de carte ni d'adresse de facturation : l'application demande à Google Play si ce
+compte a acheté le déblocage, et ne conserve que ce oui ou ce non, sur l'appareil.</p>
+
+<h2>Pourquoi</h2>
+<p>La copie en ligne n'a qu'un seul but : vous rendre vos journaux — sur un deuxième appareil, ou sur
+un nouveau téléphone après avoir perdu celui-ci. Elle ne sert à rien d'autre.</p>
+
+<h2>Durée de conservation</h2>
+<p>Jusqu'à ce que vous la supprimiez. Il n'y a ni expiration, ni copie d'archive au-delà des
+sauvegardes opérationnelles de Google Cloud.</p>
+
+<h2 id="deleting-your-data">Supprimer vos données</h2>
+<ul>
+  <li><strong>Sur l'appareil :</strong> supprimez un journal dans l'application, ou désinstallez-la.</li>
+  <li><strong>En ligne :</strong> ouvrez la fiche Compte et choisissez <em>Supprimer mes données du cloud</em>. Tout ce que le compte a stocké sur les serveurs est effacé, et le compte lui-même est supprimé. Les journaux présents sur votre appareil ne sont pas touchés.</li>
+</ul>
+
+<h2>Vos droits</h2>
+<p>Le RGPD vous donne un droit d'accès, de rectification, de portabilité et d'effacement de vos
+données personnelles, ainsi qu'un droit d'opposition à leur traitement. En pratique l'application
+vous les donne directement : ce qui est stocké est ce que vous voyez, et la suppression décrite
+ci-dessus est immédiate et complète. Pour toute autre demande, utilisez l'adresse ci-dessous.</p>
+
+<h2>Enfants</h2>
+<p>Chronicle ne s'adresse pas aux enfants et ne collecte sciemment rien les concernant.</p>
+
+<h2>Modifications</h2>
+<p>Si cette politique change, la date en haut de page change avec elle, et les versions précédentes
+restent dans l'historique public du code source.</p>
+
+<h2>Contact</h2>
+<p id="contact">Chronicle est publiée par Anthony Baschenis.<br>
+Questions sur cette politique ou sur vos données : <strong>CONTACT_EMAIL_PLACEHOLDER</strong></p>
+
+<hr>
+<p class="note">Chronicle ne conserve rien sur vous que vous n'y ayez tapé vous-même.</p>
+
+</body>
+</html>

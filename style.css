@@ -1,0 +1,88 @@
+/* Shared with the policy pages, which inline the same variables so they stay standalone. */
+:root {
+  color-scheme: light dark;
+  --ink: #1b1b1f;
+  --dim: #5a5c66;
+  --bg: #fdfbf7;
+  --card: #ffffff;
+  --rule: #e3e1ec;
+  --link: #4a5ba9;
+  --brand: #3a4a8f;
+  --paper: #f7f2e8;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #e4e1e9;
+    --dim: #a9a8b3;
+    --bg: #131317;
+    --card: #1c1c21;
+    --rule: #33333a;
+    --link: #b9c3ff;
+    --brand: #8c9bdc;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0 auto;
+  padding: 3rem 1.25rem 5rem;
+  max-width: 52rem;
+  background: var(--bg);
+  color: var(--ink);
+  font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+a { color: var(--link); }
+
+.lang { font-size: .9rem; margin: 0 0 2.5rem; color: var(--dim); }
+
+header { display: flex; align-items: center; gap: 1.25rem; margin-bottom: 2rem; }
+header img { width: 72px; height: 72px; border-radius: 18px; }
+h1 { font-size: 2.2rem; margin: 0; letter-spacing: -.025em; }
+.tagline { color: var(--dim); margin: .35rem 0 0; font-size: 1.05rem; }
+
+h2 { font-size: 1.2rem; margin: 3rem 0 .6rem; letter-spacing: -.01em; }
+p { margin: .8rem 0; }
+
+.lede { font-size: 1.12rem; line-height: 1.6; }
+
+.shots {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: .5rem 0 1.25rem;
+  margin: 2rem 0 0;
+  scroll-snap-type: x mandatory;
+}
+.shots figure { margin: 0; flex: 0 0 auto; width: 240px; scroll-snap-align: start; }
+.shots img {
+  width: 100%;
+  display: block;
+  border: 1px solid var(--rule);
+  border-radius: 14px;
+  background: var(--card);
+}
+.shots figcaption { color: var(--dim); font-size: .85rem; margin-top: .5rem; }
+
+.status {
+  border: 1px solid var(--rule);
+  background: var(--card);
+  border-radius: 12px;
+  padding: 1rem 1.15rem;
+  margin: 2.5rem 0 0;
+}
+.status p { margin: 0; }
+.status p + p { margin-top: .5rem; color: var(--dim); font-size: .92rem; }
+
+ul { padding-left: 1.2rem; }
+li { margin: .35rem 0; }
+
+footer {
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rule);
+  color: var(--dim);
+  font-size: .9rem;
+}
+footer a { color: var(--dim); }
