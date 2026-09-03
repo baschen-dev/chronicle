@@ -14,7 +14,7 @@ Website: <https://chronicle.dev.baschen.is>
 
 The website and the **public issue tracker**. The app's source is not here.
 
-- **Something is broken, or missing** — [open an issue](https://github.com/abaschen/chronicle/issues).
+- **Something is broken, or missing** — [open an issue](https://github.com/baschen-dev/chronicle/issues).
   Say which version you are on (Settings shows it) and what you expected instead.
 - **Privacy** — [English](https://chronicle.dev.baschen.is/privacy.html) ·
   [Français](https://chronicle.dev.baschen.is/confidentialite.html)
